@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import { SignUp, useAuth } from '@clerk/nextjs'
-import { UserButton } from '@clerk/nextjs'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link'
 import { useEffect } from 'react'
 import Router from 'next/router'
 
@@ -24,10 +22,6 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className="title">Notes App</h1>
         <SignUp redirectUrl="/notes" />
-
-        <Link href="/notes">
-          <a>Your Notes</a>
-        </Link>
       </main>
     </>
   )
