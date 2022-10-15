@@ -1,0 +1,76 @@
+.title {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.userButton {
+  display: flex;
+  justify-content: center;
+
+  button {
+    transform: scale(1.5);
+  }
+}
+
+.form {
+  width: 19em;
+  margin: 1em auto 0;
+
+  textarea {
+    background: #ffad15;
+    color: #000;
+    resize: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 10em;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    border: none;
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  button {
+    display: block;
+    margin: 1em auto 0;
+    height: 3em;
+    border: none;
+    border-radius: 1.2em;
+    cursor: pointer;
+    width: 10em;
+    background: #003c8a;
+    color: #fff;
+  }
+}
+
+.userNotes {
+  padding: 0 2em 5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+
+  .item {
+    margin-top: 2em;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    width: 10em;
+    height: fit-content;
+    min-height: 8em;
+    white-space: pre-wrap;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}
