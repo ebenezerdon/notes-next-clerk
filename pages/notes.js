@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { database } from '../firebase'
 import Router from 'next/router'
 import styles from '../styles/notes.module.scss'
+import Head from 'next/head'
 
 const getRandomColor = () => {
   const colors = ['#ff6c95', '#5da3ff', '#44e96d', '#ffef0a', '#ff64e5', '#ffad14']
@@ -63,6 +64,10 @@ const NotesPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Notes App</title>
+      </Head>
+
       <h1 className={styles.title}>Your Notes</h1>
       <div className={styles.userButton}>
         <UserButton />
